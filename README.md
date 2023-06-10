@@ -1,6 +1,6 @@
 ## HOW TO RUN
 
-#### (last updated on 4/11/2022 by R2th)
+#### (last updated on 10/6/2023 by R2th)
 
 ## FIRST
 
