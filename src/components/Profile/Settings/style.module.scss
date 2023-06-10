@@ -1,0 +1,80 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    .form {
+        width: 70%;
+        height: 100%;
+
+        h1 {
+            font-size: 60px;
+            padding-left: 12%;
+        }
+
+        .list_option {
+            padding-left: 12%;
+
+            .option {
+                justify-content: center;
+                box-shadow: none;
+                background: none;
+                border: none;
+                font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+                color: black;
+                margin-left: 16px;
+                font-size: 20px;
+
+                &:hover {
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .help {
+        position: fixed;
+        display: block;
+        width: 20%;
+        height: 100vh;
+        border-left: 1px solid rgb(187, 181, 181);
+        left: 75%;
+
+        .content {
+            padding-left: 3%;
+
+            h3 {
+                font-size: 25px;
+                padding-left: 3%;
+            }
+
+            div {
+                font-size: 15px;
+                padding-left: 3%;
+                margin-bottom: 25px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .term {
+                span {
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    color: rgb(121, 118, 118);
+                    text-decoration: underline;
+                    margin-right: 20px;
+                }
+
+                div {
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    color: rgb(121, 118, 118);
+                    text-decoration: underline;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

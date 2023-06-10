@@ -1,0 +1,35 @@
+import { API_ENDPOINT } from 'utils/const';
+import { buildPath } from '../utils/helpers';
+
+export async function loginUser(credentials) {
+  const url = '/auth/login';
+
+  return fetch(buildPath(API_ENDPOINT, url), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      username: credentials.username,
+      password: credentials.password,
+    }),
+  }).then((data) => data.json());
+}
+
+export async function SignupUser(credentials) {
+  const url = '/auth/signup';
+
+  return fetch(buildPath(API_ENDPOINT, url), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      username: credentials.username,
+      email: credentials.email,
+      password: credentials.password,
+      first_name: credentials.first_name,
+      last_name: credentials.last_name,
+      bio: credentials.bio,
+      // day: credentials.day,
+      // month: credentials.month,
+      // year: credentials.year,
+    }),
+  }).then((data) => data.json());
+}
